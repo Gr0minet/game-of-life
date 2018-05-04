@@ -10,7 +10,7 @@ Have you ever wondered how programs like top or nano work ? Well, they all use a
 
 These software use the C library curses. As we are coding with python here, we will use the python wrapper for curses.
 
-You can find a very good tutorial on how curses with python works [here](https://docs.python.org/3/howto/curses.html). I will sum up briefly how the python module curses works.
+You can find a very good tutorial on how curses with python works [here](https://docs.python.org/3/howto/curses.html). I will sum up briefly how the module works.
 
 ### Initializing curses
 
@@ -79,16 +79,16 @@ Ok, now we are ready to build our Game of Life (GoL) with curses ! Let's list wh
 But first of all, we need to know what is the size of the terminal window. You can use curses.COLS, and curses.LINES in order to know that :
 
 ```python
-	(w, h) = (curses.COLS - 1, curses.LINES - 1)
+(w, h) = (curses.COLS - 1, curses.LINES - 1)
 ```
 
 Then, we need to have a data structure to store the current GoL state. We will use a simple 2-dimensional array : 
 
 ```python
-    state = [[False for _ in range(h)] for _ in range(w)]
+state = [[False for _ in range(h)] for _ in range(w)]
 ```
 
-`state[i][j]` is *True*  if there is a cell at the (i, j) position, False otherwise.
+`state[i][j]` is *True*  if there is a cell at the (i, j) position, *False* otherwise.
 
 Now it's time to add several starting cells on the screen. In order to do that, `randrange()` from the python module `random` will be useful. For instance, `randrange(10)` will give us a pseudo-random integer between 0 and 9 included.
 
