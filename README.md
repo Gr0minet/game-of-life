@@ -1,16 +1,16 @@
 # Game of Life
 
-This is [Conway's Game of Life] (https://en.wikipedia.org/wiki/Conway's_Game_of_Life) written with python3 and curses. This is a very brief example to show how curses works with python.
+This is [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) written with python3 and curses. This is a very brief example to show how curses works with python.
 
-I will assume you have basic knowledge of python syntax. If you are looking for a crash course, you can find [one here] (https://learnxinyminutes.com/docs/python3/). No need to read everything about the latter, as we won't use any class or advanced stuff here.
+I will assume you have basic knowledge of python syntax. If you are looking for a crash course, you can find [one here](https://learnxinyminutes.com/docs/python3/). No need to read everything about the latter, as we won't use any class or advanced stuff here.
 
 ## Curses with python
 
-Have you ever wondered how programs like top or nano work ? Well, they all use a [terminal user interface] (https://en.wikipedia.org/wiki/Text-based_user_interface) library : [curses] (https://en.wikipedia.org/wiki/Curses_(programming_library)). 
+Have you ever wondered how programs like top or nano work ? Well, they all use a [terminal user interface](https://en.wikipedia.org/wiki/Text-based_user_interface) library : [curses](https://en.wikipedia.org/wiki/Curses_(programming_library)). 
 
 These software use the C library curses. As we are coding with python here, we will use the python wrapper for curses.
 
-You can find a very good tutorial on how curses with python works [here] (https://docs.python.org/3/howto/curses.html). I will sum up briefly how the python module curses works.
+You can find a very good tutorial on how curses with python works [here](https://docs.python.org/3/howto/curses.html). I will sum up briefly how the python module curses works.
 
 ### Initializing curses
 
