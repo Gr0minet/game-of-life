@@ -30,11 +30,11 @@ def print_state (stdscr, state, w, h):
     for i in range(w):
         for j in range(h):
             if state[i][j]:
-                stdscr.addstr(j, i, 'O') # curses display is inverted : (y, x)
+                stdscr.addstr(j, i, 'O') # curses display is reversed : (y, x)
 
 def main (stdscr):
     curses.curs_set(False) # Do not display blinking cursor
-    w, h = (curses.COLS - 1, curses.LINES - 1)
+    (w, h) = (curses.COLS - 1, curses.LINES - 1)
     state = [[False for _ in range(h)] for _ in range(w)]
     random_state (state, int((w * h) / 10), w, h)
 
