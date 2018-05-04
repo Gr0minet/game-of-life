@@ -16,7 +16,7 @@ def evolve (state, w, h):
     new_state = [[False for _ in range(h)] for _ in range(w)]
     for i in range(w):
         for j in range(h):
-            cnt = neigh_num (state, i, j, w, h)
+            cnt = neigh_num(state, i, j, w, h)
             if (state[i][j] and (cnt == 2 or cnt == 3)) or (not state[i][j] and cnt == 3):
                 new_state[i][j] = True
     return new_state
@@ -38,7 +38,7 @@ def main (stdscr):
     curses.curs_set(False) # Do not display blinking cursor
     (w, h) = (curses.COLS - 1, curses.LINES - 1)
     state = [[False for _ in range(h)] for _ in range(w)]
-    random_state (state, int((w * h) / 10), w, h)
+    random_state(state, int((w * h) / 10), w, h)
 
     k = 'a'
     while k != 'q':
