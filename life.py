@@ -24,6 +24,8 @@ def evolve (state, w, h):
 def random_state (state, n, w, h):
     for _ in range(n):
         (i, j) = (randrange(w), randrange(h))
+        while state[i][j] == True:
+            (i, j) = (randrange(w), randrange(h))
         state[i][j] = True
 
 def print_state (stdscr, state, w, h):
