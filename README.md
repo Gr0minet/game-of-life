@@ -79,7 +79,7 @@ Ok, now we are ready to build our Game of Life (GoL) with curses ! Let's list wh
 But first of all, we need to know what is the size of the terminal window. You can use curses.COLS, and curses.LINES in order to know that :
 
 ```python
-(w, h) = (curses.COLS - 1, curses.LINES - 1)
+(w, h) = (curses.COLS, curses.LINES)
 ```
 
 Then, we need to have a data structure to store the current GoL state. We will use a simple 2-dimensional array : 
