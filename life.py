@@ -36,7 +36,7 @@ def print_state (stdscr, state, w, h):
 
 def main (stdscr):
     curses.curs_set(False) # Do not display blinking cursor
-    (w, h) = (curses.COLS - 1, curses.LINES - 1)
+    (w, h) = (curses.COLS, curses.LINES)
     state = [[False for _ in range(h)] for _ in range(w)]
     random_state(state, int((w * h) / 10), w, h)
 
